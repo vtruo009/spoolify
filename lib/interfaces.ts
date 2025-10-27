@@ -7,7 +7,7 @@ export interface Spool {
 	weight_remaining: number;
 }
 
-enum FilamentType {
+export enum FilamentType {
 	PLA = 'PLA',
 	ABS = 'ABS',
 	ASA = 'ASA',
