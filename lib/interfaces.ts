@@ -1,8 +1,8 @@
 export interface Spool {
-	name: string;
+	short_description: string;
 	brand?: string;
-	color: string;
-	type: FilamentType;
+	filament_color: string;
+	filament_type: FilamentType;
 	weight_start: number;
 	weight_remaining: number;
 }
