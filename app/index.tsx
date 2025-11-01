@@ -1,3 +1,4 @@
+import AddButton from '@/components/addButton';
 import Filament from '@/components/filament';
 import { FilamentType, Spool } from '@/lib/interfaces';
 import { FlatList, Text } from 'react-native';
@@ -30,7 +31,7 @@ const TEST_SPOOLS: Spool[] = [
 export default function Index() {
 	return (
 		<SafeAreaView className='flex-1 bg-background'>
-			<Text className='text-5xl text-left pl-5 py-3'>My Filaments</Text>
+			<Text className='text-5xl text-left pl-5 py-6'>My Filaments</Text>
 			<FlatList
 				data={TEST_SPOOLS}
 				renderItem={({ item }) => (
@@ -44,6 +45,7 @@ export default function Index() {
 				)}
 				keyExtractor={(item) => item.short_description}
 			/>
+			<AddButton />
 		</SafeAreaView>
 	);
 }

@@ -1,5 +1,4 @@
 import { Spool } from '@/lib/interfaces';
-import React from 'react';
 import { Text, TouchableOpacity, View } from 'react-native';
 
 const getBgColor = (filamentColor: string) => {
@@ -10,7 +9,9 @@ const Filament = (spool: Spool) => {
 	return (
 		<TouchableOpacity
 			className='flex flex-row items-center px-8 py-4 gap-4'
-			onPress={() => {}}
+			onPress={() => {
+				console.log(`${spool.short_description} clicked.`);
+			}}
 		>
 			<View
 				className={`${getBgColor(spool.filament_color)} rounded-full w-16 h-16`}
