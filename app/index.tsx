@@ -7,7 +7,7 @@ import { SafeAreaView } from 'react-native-safe-area-context';
 const TEST_SPOOLS: Spool[] = [
 	{
 		short_description: 'Polyterra Matte Orange',
-		filament_color: '#E27429',
+		filament_color: '#e27429',
 		filament_type: FilamentType.PLA,
 		weight_start: 1,
 		weight_remaining: 0.8,

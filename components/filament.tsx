@@ -1,9 +1,6 @@
 import { Spool } from '@/lib/interfaces';
+import { Circle } from 'lucide-react-native';
 import { Text, TouchableOpacity, View } from 'react-native';
-
-const getBgColor = (filamentColor: string) => {
-	return `bg-[${filamentColor}]`;
-};
 
 const Filament = (spool: Spool) => {
 	return (
@@ -13,9 +10,7 @@ const Filament = (spool: Spool) => {
 				console.log(`${spool.short_description} clicked.`);
 			}}
 		>
-			<View
-				className={`${getBgColor(spool.filament_color)} rounded-full w-16 h-16`}
-			></View>
+			<Circle size={64} fill={spool.filament_color} strokeWidth={0} />
 			<View className='flex flex-col'>
 				<Text className='text-xl'>{spool.short_description}</Text>
 				<View className='flex'>
