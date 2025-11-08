@@ -1,6 +1,5 @@
 export interface Spool {
-	short_description: string;
-	brand?: string;
+	description: string;
 	filament_color: string;
 	filament_type: FilamentType;
 	weight_start: number;
